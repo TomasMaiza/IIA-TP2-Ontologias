@@ -448,6 +448,7 @@
         <lenguajes-de-programacion:tieneNivelAbstraccion rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Alto"/>
         <lenguajes-de-programacion:tieneSistemaTipos rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Estatico"/>
         <lenguajes-de-programacion:tieneSistemaTipos rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Fuerte"/>
+        <untitled-ontology-2:tieneParadigma rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Declarativo"/>
     </owl:NamedIndividual>
     
 
