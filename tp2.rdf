@@ -33,6 +33,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#escritoEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#escritoEn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#LenguajesProgramacion"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneImplementacion -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneImplementacion">
@@ -153,6 +162,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+    
+
+
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#PropositoLenguajes -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#PropositoLenguajes"/>
@@ -265,6 +280,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Doom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Doom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Assembly"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#LenguajesProgramacion"/>
+        <lenguajes-de-programacion:esDeProposito rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Especifico"/>
+        <lenguajes-de-programacion:tieneNivelAbstraccion rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Alto"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dr_Racket -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dr_Racket">
@@ -280,6 +315,23 @@
         <untitled-ontology-2:tieneParadigma rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Funcional"/>
         <untitled-ontology-2:tieneParadigma rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Imperativo"/>
         <untitled-ontology-2:tieneParadigma rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Logico"/>
+        <untitled-ontology-2:tieneParadigma rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#OrientadoAObjetos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Erlang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Erlang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#LenguajesProgramacion"/>
+        <lenguajes-de-programacion:esDeProposito rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#General"/>
+        <lenguajes-de-programacion:tieneImplementacion rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Compilado"/>
+        <lenguajes-de-programacion:tieneManejoErrores rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Excepciones"/>
+        <lenguajes-de-programacion:tieneManejoMemoria rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#RecolectorBasura"/>
+        <lenguajes-de-programacion:tieneNivelAbstraccion rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Alto"/>
+        <lenguajes-de-programacion:tieneSistemaTipos rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dinamico"/>
+        <lenguajes-de-programacion:tieneSistemaTipos rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Fuerte"/>
+        <untitled-ontology-2:tieneParadigma rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Funcional"/>
         <untitled-ontology-2:tieneParadigma rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#OrientadoAObjetos"/>
     </owl:NamedIndividual>
     
@@ -329,6 +381,25 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#General">
         <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#PropositoLenguajes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Git -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Git">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#C"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Python"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Graphviz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Graphviz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dot"/>
     </owl:NamedIndividual>
     
 
@@ -405,10 +476,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Minecraft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Minecraft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Java"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#OrientadoAObjetos -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#OrientadoAObjetos">
         <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#ParadigmaProgramacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Pandoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Pandoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Haskell"/>
     </owl:NamedIndividual>
     
 
@@ -453,10 +542,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SQLite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SQLite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#C"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SQL"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Tipado -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Tipado">
         <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#ManejoErroresLenguajes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Whatsapp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Whatsapp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Programas"/>
+        <lenguajes-de-programacion:escritoEn rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Erlang"/>
     </owl:NamedIndividual>
     
 
