@@ -92,12 +92,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSeveridadDeChequeo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSeveridadDeChequeo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSistemaTipos"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#LenguajesProgramacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SeveridadDeChequeo"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSistemaTipos -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSistemaTipos">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#LenguajesProgramacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#LenguajesTipados"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneTiempoDeChequeo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneTiempoDeChequeo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSistemaTipos"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#LenguajesProgramacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#TiempoDeChequeo"/>
     </owl:ObjectProperty>
     
 
@@ -171,10 +193,20 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#LenguajesProgramacion"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSistemaTipos"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
-                    </owl:Restriction>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneSeveridadDeChequeo"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SeveridadDeChequeo"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#tieneTiempoDeChequeo"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#TiempoDeChequeo"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -286,9 +318,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SeveridadDeChequeo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SeveridadDeChequeo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#TiempoDeChequeo"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#TiempoDeChequeo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#TiempoDeChequeo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+    </owl:Class>
     
 
 
@@ -371,7 +420,10 @@
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Debil -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Debil">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SeveridadDeChequeo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dinamico"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Estatico"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Fuerte"/>
     </owl:NamedIndividual>
     
 
@@ -387,7 +439,9 @@
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dinamico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Dinamico">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#TiempoDeChequeo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Estatico"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Fuerte"/>
     </owl:NamedIndividual>
     
 
@@ -461,7 +515,8 @@
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Estatico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Estatico">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#TiempoDeChequeo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Fuerte"/>
     </owl:NamedIndividual>
     
 
@@ -477,7 +532,7 @@
     <!-- http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Fuerte -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#Fuerte">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SistemaTipos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#SeveridadDeChequeo"/>
     </owl:NamedIndividual>
     
 
