@@ -49,7 +49,17 @@ Consideramos también propiedades inversas. Por ejemplo, la inversa de la propie
 
 ## Diagrama de la ontología
 
+![Clases](./images/Clases.jpg)
+
+Las flechas continuas son relaciones de subclase.
+
+Las flechas rayadas son relaciones de 'tieneX'.
+
+Las flechas de puntos son relaciones de 'tieneX' que definen una clase de equivalencia
+
 ## Esquema de instancias
+
+![Instancias](./images/EjemploIndividuos.jpg)
 
 ## Consultas
 
@@ -93,6 +103,31 @@ En la tercera consulta, el razonador sabe que el lenguaje Dot es de dominio espe
 
 ![Razonamiento consulta 3](images/razonamiento3.png)
 
+## Conclusiones
+
+Inicialmente planteamos la ontología utilizando unicamente clases, ya que no se nos ocurría 
+en qué momento era correcto dejar de generalizar los conceptos (ya que todos los individuos que 
+planteamos se podrían pensar como clases si nos adentramos a mayores detalles). Finalmente, 
+decidimos plantear las consultas centrandonos en los lenguajes de programación en general, por lo 
+que consideramos como individuos a lenguajes y programas particulares.
+
+Nos encontramos con dificultades a la hora de responder las consultas por malinterpretar el 
+concepto de 'OWA' ("Open World Assumption"). Cuando realizabamos consultas respecto a la cardinalidad no obteníamos ningún resultado.  
+Analizando la ontología que construímos, nos dimos cuenta de que el razonador no podía asumir
+que las relaciones que especificamos desde un individuo a varios otros realmente fueran "a varios 
+otros", ya que no habíamos indicado que estos individuos fueran distintos. Según la 'OWA', si 
+se desconoce cierta información no asumimos nada sobre su naturaleza. Puede ser verdadera o
+falsa, pero lo desconocemos.  
+Una vez que especificamos que los individuos eran distintos,
+las consultas resultaron como esperábamos.
+
+Finalmente, no pudimos representar correctamente con las herramientas que teníamos la regla de 
+que si un lenguaje tiene un sistema de tipado fuerte (estático), no puede tener un sistema
+de tipado débil (dinámico), y viceversa. Intentamos definir los lenguajes tipados bajo esta 
+restricción, pero esto no evita que un lenguaje sea definido erróneamente, generando una 
+contradicción que la ontología no capta.  
+Investigando descubrimos que podría ser posible captar esta idea utilizando SWRL (Semantic Web 
+Rule Language), pero nos pareció que escapaba al alcance de lo que vimos en la materia.
 
 ## Fuentes
 
