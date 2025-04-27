@@ -131,6 +131,8 @@ Rule Language), pero nos pareció que escapaba al alcance de lo que vimos en la 
 
 ## Fuentes
 
-https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n
-https://en.wikipedia.org/wiki/Programming_language
-https://es.wikipedia.org/wiki/Tipado_fuerte
+- https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n
+
+- https://en.wikipedia.org/wiki/Programming_language
+
+- https://es.wikipedia.org/wiki/Tipado_fuerte
