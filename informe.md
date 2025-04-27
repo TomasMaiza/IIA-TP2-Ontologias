@@ -67,8 +67,25 @@ podamos responder con las instancias ingresadas.
 - Programas
  and (escritoEn some (esDeProposito value Especifico))
 
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/consulta1.png}
+\includegraphics[width=0.3\textwidth]{images/consulta2.png}
+\includegraphics[width=0.3\textwidth]{images/consulta3.png}
+\end{center}
+
 ## Análisis del razonador
 
+Para la primera consulta, el razonador sabe que el programa Git está escrito en los lenguajes C y Python, que estos dos son individuos distintos, y que Python tiene sistema de tipos dinámico, con lo cual Git cumple con las condiciones dadas en la consulta.
+
+![Razonamiento consulta 1](images/razonamiento1.png)
+
+En la segunda consulta, el razonador sabe que el paradigma del lenguaje Haskell es funcional y su sistema de tipos es fuerte, por lo cual cumple con las condiciones de la consulta.
+
+![Razonamiento consulta 2](images/razonamiento2.png)
+
+En la tercera consulta, el razonador sabe que el lenguaje Dot es de dominio específico y que el programa Graphviz está escrito en Dot, por lo cual cumple la condición de la consulta.
+
+![Razonamiento consulta 3](images/razonamiento3.png)
 
 
 ## Fuentes
