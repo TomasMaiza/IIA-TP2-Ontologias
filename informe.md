@@ -41,6 +41,12 @@ más específicas sobre posibles miembros de una clase de un lenguaje en particu
 
 **Programas**: paquetes de software escritos en algún o algunos lenguajes.
 
+Consideramos como clases disjuntas, por ejemplo, a Programas y Lenguajes.
+
+Tenemos clases definidas, por ejemplo: la subclase LenguajesTipados de la clase LenguajesProgramación, que está definida por la condición de que un lenguaje tenga un sistema de tipos (un lenguaje tiene sistema de tipos si y solo si es un lenguaje tipado).
+
+Consideramos también propiedades inversas. Por ejemplo, la inversa de la propiedad tieneParadigma (de Lenguaje a Paradigma) es tieneLenguaje (de Paradigma a Lenguaje.)
+
 ## Diagrama de la ontología
 
 ## Esquema de instancias
