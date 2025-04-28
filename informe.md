@@ -21,6 +21,8 @@ los lenguajes y programas como individuos, puesto que no nos interesaba realizar
 más específicas sobre posibles miembros de una clase de un lenguaje en particular
 (Como podría ser las distintas versiones de un lenguaje, distintas implementaciones dependiendo del compilador, etc...)
 
+No tomamos inspiración de otras ontologías, pero utilizamos como referencia el tutorial de las pizzas para resolver algunas dificultades.
+
 ## Conceptos Representados
 
 **Lenguajes de programación**: lenguaje formal para programar una serie de instrucciones en forma de algoritmos.
