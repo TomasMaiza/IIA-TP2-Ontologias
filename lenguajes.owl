@@ -1,0 +1,1059 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion">
+    <Prefix name="" IRI="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-2" IRI="http://www.semanticweb.org/tomi/ontologies/2025/3/untitled-ontology-2#"/>
+    <Prefix name="lenguajes-de-programacion" IRI="http://www.semanticweb.org/tomi/ontologies/2025/3/lenguajes-de-programacion#"/>
+    <Declaration>
+        <Class IRI="#ImplementacionLenguajes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LenguajesFuncionalesFuertes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LenguajesTipados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManejoErroresLenguajes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManejoMemoriaLenguajes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NivelAbstraccion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgramasConDSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgramasMultiLenguajes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgramasMultiLenguajesConAlgunoDinamico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PropositoLenguajes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeveridadDeChequeo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SistemaTipos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TiempoDeChequeo"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esDeProposito"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#escritoEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneLenguajesTipados"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneSeveridadDeChequeo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneTiempoDeChequeo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneLenguajes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Assembly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bajo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Compilado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Debil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Declarativo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dinamico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dr_Racket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Erlang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Especifico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estatico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Excepciones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fuerte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Funcional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#General"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Git"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Graphviz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Haskell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Imperativo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interpretado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Java"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Logico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minecraft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OrientadoAObjetos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pandoc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecolectorBasura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SQL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SQLite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tipado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Whatsapp"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#LenguajesFuncionalesFuertes"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#tieneSistemaTipos"/>
+                    <NamedIndividual IRI="#Fuerte"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+                    <NamedIndividual IRI="#Funcional"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LenguajesTipados"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+            <ObjectIntersectionOf>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#tieneSeveridadDeChequeo"/>
+                    <Class IRI="#SeveridadDeChequeo"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#tieneTiempoDeChequeo"/>
+                    <Class IRI="#TiempoDeChequeo"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProgramasConDSL"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Programas"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#escritoEn"/>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#esDeProposito"/>
+                    <NamedIndividual IRI="#Especifico"/>
+                </ObjectHasValue>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProgramasMultiLenguajes"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Programas"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#escritoEn"/>
+                <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProgramasMultiLenguajesConAlgunoDinamico"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Programas"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#escritoEn"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#tieneSistemaTipos"/>
+                        <NamedIndividual IRI="#Dinamico"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectMinCardinality cardinality="2">
+                    <ObjectProperty IRI="#escritoEn"/>
+                    <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+                </ObjectMinCardinality>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#SeveridadDeChequeo"/>
+        <Class IRI="#SistemaTipos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TiempoDeChequeo"/>
+        <Class IRI="#SistemaTipos"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ImplementacionLenguajes"/>
+        <Class IRI="#ManejoErroresLenguajes"/>
+        <Class IRI="#ManejoMemoriaLenguajes"/>
+        <Class IRI="#NivelAbstraccion"/>
+        <Class IRI="#PropositoLenguajes"/>
+        <Class IRI="#SistemaTipos"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ImplementacionLenguajes"/>
+        <Class IRI="#Programas"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ManejoErroresLenguajes"/>
+        <Class IRI="#ManejoMemoriaLenguajes"/>
+        <Class IRI="#NivelAbstraccion"/>
+        <Class IRI="#Programas"/>
+        <Class IRI="#PropositoLenguajes"/>
+        <Class IRI="#SistemaTipos"/>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NivelAbstraccion"/>
+        <Class IRI="#SistemaTipos"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SeveridadDeChequeo"/>
+        <Class IRI="#TiempoDeChequeo"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#NivelAbstraccion"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#Assembly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NivelAbstraccion"/>
+        <NamedIndividual IRI="#Bajo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementacionLenguajes"/>
+        <NamedIndividual IRI="#Compilado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeveridadDeChequeo"/>
+        <NamedIndividual IRI="#Debil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+        <NamedIndividual IRI="#Declarativo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TiempoDeChequeo"/>
+        <NamedIndividual IRI="#Dinamico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programas"/>
+        <NamedIndividual IRI="#Doom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#Dot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#Erlang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PropositoLenguajes"/>
+        <NamedIndividual IRI="#Especifico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TiempoDeChequeo"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManejoErroresLenguajes"/>
+        <NamedIndividual IRI="#Excepciones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeveridadDeChequeo"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+        <NamedIndividual IRI="#Funcional"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PropositoLenguajes"/>
+        <NamedIndividual IRI="#General"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programas"/>
+        <NamedIndividual IRI="#Git"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programas"/>
+        <NamedIndividual IRI="#Graphviz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#Haskell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+        <NamedIndividual IRI="#Imperativo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementacionLenguajes"/>
+        <NamedIndividual IRI="#Interpretado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#Java"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+        <NamedIndividual IRI="#Logico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManejoMemoriaLenguajes"/>
+        <NamedIndividual IRI="#Manual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NivelAbstraccion"/>
+        <NamedIndividual IRI="#Medio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programas"/>
+        <NamedIndividual IRI="#Minecraft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+        <NamedIndividual IRI="#OrientadoAObjetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programas"/>
+        <NamedIndividual IRI="#Pandoc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#Python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManejoMemoriaLenguajes"/>
+        <NamedIndividual IRI="#RecolectorBasura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+        <NamedIndividual IRI="#SQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programas"/>
+        <NamedIndividual IRI="#SQLite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManejoErroresLenguajes"/>
+        <NamedIndividual IRI="#Tipado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programas"/>
+        <NamedIndividual IRI="#Whatsapp"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Assembly"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Dot"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#SQL"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Debil"/>
+        <NamedIndividual IRI="#Dinamico"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Debil"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Debil"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Dinamico"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Dinamico"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Doom"/>
+        <NamedIndividual IRI="#Git"/>
+        <NamedIndividual IRI="#Graphviz"/>
+        <NamedIndividual IRI="#Minecraft"/>
+        <NamedIndividual IRI="#Pandoc"/>
+        <NamedIndividual IRI="#SQLite"/>
+        <NamedIndividual IRI="#Whatsapp"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Especifico"/>
+        <NamedIndividual IRI="#General"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Estatico"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#Assembly"/>
+        <NamedIndividual IRI="#General"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#Assembly"/>
+        <NamedIndividual IRI="#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <NamedIndividual IRI="#Assembly"/>
+        <NamedIndividual IRI="#Manual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#Assembly"/>
+        <NamedIndividual IRI="#Bajo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Assembly"/>
+        <NamedIndividual IRI="#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#General"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Tipado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Manual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Medio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Debil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#C"/>
+        <NamedIndividual IRI="#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Doom"/>
+        <NamedIndividual IRI="#Assembly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Doom"/>
+        <NamedIndividual IRI="#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#Dot"/>
+        <NamedIndividual IRI="#Especifico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#Dot"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#General"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Interpretado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Excepciones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#RecolectorBasura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#Logico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Dr_Racket"/>
+        <NamedIndividual IRI="#OrientadoAObjetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#General"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#Excepciones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#RecolectorBasura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Erlang"/>
+        <NamedIndividual IRI="#OrientadoAObjetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Git"/>
+        <NamedIndividual IRI="#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Git"/>
+        <NamedIndividual IRI="#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Graphviz"/>
+        <NamedIndividual IRI="#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Graphviz"/>
+        <NamedIndividual IRI="#Dot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#General"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#Tipado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#RecolectorBasura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Haskell"/>
+        <NamedIndividual IRI="#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#General"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#Tipado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#RecolectorBasura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#OrientadoAObjetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Minecraft"/>
+        <NamedIndividual IRI="#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Pandoc"/>
+        <NamedIndividual IRI="#Haskell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#General"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#Interpretado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#Tipado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#RecolectorBasura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#Python"/>
+        <NamedIndividual IRI="#OrientadoAObjetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <NamedIndividual IRI="#SQL"/>
+        <NamedIndividual IRI="#Especifico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <NamedIndividual IRI="#SQL"/>
+        <NamedIndividual IRI="#Interpretado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <NamedIndividual IRI="#SQL"/>
+        <NamedIndividual IRI="#Alto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#SQL"/>
+        <NamedIndividual IRI="#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <NamedIndividual IRI="#SQL"/>
+        <NamedIndividual IRI="#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <NamedIndividual IRI="#SQL"/>
+        <NamedIndividual IRI="#Declarativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#SQLite"/>
+        <NamedIndividual IRI="#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#SQLite"/>
+        <NamedIndividual IRI="#SQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#escritoEn"/>
+        <NamedIndividual IRI="#Whatsapp"/>
+        <NamedIndividual IRI="#Erlang"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#escritoEn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneLenguajesTipados"/>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneLenguajes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneSeveridadDeChequeo"/>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneTiempoDeChequeo"/>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneLenguajes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneLenguajes"/>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tieneSeveridadDeChequeo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tieneTiempoDeChequeo"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#escritoEn"/>
+        <Class IRI="#Programas"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneSeveridadDeChequeo"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <Class IRI="#LenguajesTipados"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneTiempoDeChequeo"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esDeProposito"/>
+        <Class IRI="#PropositoLenguajes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#escritoEn"/>
+        <Class abbreviatedIRI="untitled-ontology-2:LenguajesProgramacion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneImplementacion"/>
+        <Class IRI="#ImplementacionLenguajes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneLenguajesTipados"/>
+        <Class IRI="#LenguajesTipados"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneManejoErrores"/>
+        <Class IRI="#ManejoErroresLenguajes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneManejoMemoria"/>
+        <Class IRI="#ManejoMemoriaLenguajes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneNivelAbstraccion"/>
+        <Class IRI="#NivelAbstraccion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneSeveridadDeChequeo"/>
+        <Class IRI="#SeveridadDeChequeo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneSistemaTipos"/>
+        <Class IRI="#SistemaTipos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneTiempoDeChequeo"/>
+        <Class IRI="#TiempoDeChequeo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="untitled-ontology-2:tieneParadigma"/>
+        <Class abbreviatedIRI="untitled-ontology-2:ParadigmaProgramacion"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
